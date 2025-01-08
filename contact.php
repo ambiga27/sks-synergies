@@ -12,6 +12,17 @@ if(isset($_POST['submit'])){
 
     $headers = "From:" . $from;
     mail($to,$subject,$message,$headers);
+
+     // The location of the PDF file
+    // on the server
+    $filename = "sample.pdf";
+    
+    // Header content type
+    header("Content-type: application/pdf");
+    header("Content-Length: " . filesize($filename));
+    
+    // Send the file to the browser.
+    readfile($filename);
     
     header('Location:index.html');
 //    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
