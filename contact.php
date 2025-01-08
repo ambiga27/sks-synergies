@@ -1,4 +1,5 @@
 <?php 
+echo "hai";
 /*if(isset($_POST['submit'])){
     $to = "email@example.com"; // this is your Email address
     $name = $_POST['firstname'];
