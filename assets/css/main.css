@@ -4794,19 +4794,25 @@ span {
 }
 
 .text-slider {
-  font-size: 50px;
+  font-size: 30px;
   height: 100px;
   line-height: 90px;
   font-weight: 700;
   text-transform: capitalize;
   color: var(--white);
+  padding-bottom: 10px;
+}
+.text-slider:nth-child(odd)
+{
+  border-bottom: 2px solid var(--white);
+
 }
 .text-slider:not(:last-child) {
   margin-right: 30px;
 }
 @media (max-width: 767px) {
   .text-slider {
-    font-size: 36px;
+    font-size: 26px;
   }
 }
 .text-slider img {
