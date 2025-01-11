@@ -4786,6 +4786,8 @@ span {
   background-color: transparent;
   line-height: 55px;
   margin-bottom: -39px;
+  height: 200px;
+  line-height: 150px;
 }
 @media (max-width: 767px) {
   .marquee-wrapper.style-2 {
@@ -4810,6 +4812,22 @@ span {
 .text-slider:not(:last-child) {
   margin-right: 30px;
 }
+.marque-section {
+  position: relative;
+}
+
+.marque-section:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-image: url('../img/bg.jpg');
+  background-repeat: repeat;
+}
 @media (max-width: 767px) {
   .text-slider {
     font-size: 26px;
@@ -4817,6 +4835,8 @@ span {
 }
 .text-slider img {
   margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 .marquee-inner {
@@ -4836,15 +4856,15 @@ span {
 }
 .marquee-item.style-2 .text-slider {
   text-transform: capitalize;
-  font-size: 60px;
+  font-size: 30px;
   color: var(--header);
   margin-right: 40px;
   line-height: 0;
-  height: 65px;
+  height: 100px;
 }
 @media (max-width: 767px) {
   .marquee-item.style-2 .text-slider {
-    font-size: 36px;
+    font-size: 20px;
   }
 }
 .marquee-item.style-2 .text-style {
