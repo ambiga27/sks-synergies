@@ -8023,3 +8023,20 @@ input.main-search-input::placeholder {
   left: 0%;
   }
 }
+
+
+.tab-content
+{
+  background: white;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-top: none;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.105);
+}
+.tab-content:hover
+{
+  box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.123);
+}
