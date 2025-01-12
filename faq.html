@@ -270,67 +270,445 @@
         <!--<< Faq Section Start >>-->
         <section class="faq-section-2 fix section-padding">
             <div class="container">
+                <div class="section-title text-center">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+            <div class="container">
                 <div class="faq-wrapper">
                     <div class="row g-4">
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="col-lg-5 wow fadeInUp" data-wow-delay=".4s">
                             <div class="faq-image">
-                                <img src="assets/img/faq/faq-2.png" alt="faq-img">
+                                <img src="assets/img/faq.jpg" alt="faq-img">
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="faq-content style-2">
-                                <div class="section-title">
-                                    <span class="wow fadeInUp">See Our Faqs</span>
-                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                        Company of Solar Solutions
-                                    </h2>
-                                </div>
-                                <div class="faq-accordion mt-4 mt-md-0">
-                                <div class="accordion" id="accordion">
-                                    <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay=".3s">
-                                        <h5 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                                                How long should a business plan be?
-                                            </button>
-                                        </h5>
-                                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                                            <div class="accordion-body">
-                                                There are many variations of passages Lorem Ipsum but the majority have suffered alteration in some form, by injected humor.
+                        <div class="col-lg-7">
+                            <div class="tab-wrap style-2">
+                                <div class=" mt-4 mt-md-0">
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist" style="font-size: 22px;">
+                                        <button class="nav-link col-lg-4 active" onclick="openCity(event,'general')" id="generalt" data-toggle="tab" data-target="#general" type="button" role="tab" aria-controls="general" aria-selected="true">General</button>
+                                        <button class="nav-link col-lg-4" onclick="openCity(event,'maintanance')" id="maintanancet" data-toggle="tab" data-target="#maintanance" type="button" role="tab" aria-controls="maintanance" aria-selected="false">Solar Maintanance</button>
+                                        <button class="nav-link col-lg-4" onclick="openCity(event,'expenditure')" id="expendituret" data-toggle="tab" data-target="#expenditure" type="button" role="tab" aria-controls="expenditure" aria-selected="false">Solar Expenditure</button>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content contact-wrapper-2" id="nav-tabContent">
+                                        <div class="tab-pane show active contact-content" id="general" role="tabpanel" aria-labelledby="generalt">
+                                            <div class="faq-accordion mt-4 mt-md-0">
+                                                <div class="accordion" id="accordion">
+                                                    <div class="accordion-item mb-3" data-wow-delay=".3s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                                                What is a solar rooftop system?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                                A solar rooftop system is a combination of many components that convert sunlight into usable electricity.
+                                                                    <br>The components of a rooftop solar include the following -
+                                                                    <ul style="list-style-type: disc;padding-left: 30px;">
+                                                                        <li> Solar panels with PV cells</li>
+                                                                        <li>Solar inverter</li>
+                                                                        <li>Solar panel mounting structures</li>
+                                                                        <li>AC and DC cables</li>
+                                                                        <li>AC combiner box</li>
+                                                                        <li>DC combiner box</li>
+                                                                        <li> Earthing cables</li>
+                                                                        <li>MC4 connectors</li>
+                                                                    </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                                                How does a solar rooftop system work?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                                A solar rooftop system works on the concept of conversion of sunlight into electricity. The phenomenon is known as the photovoltaic effect.
+                                                                
+                                                                When sunlight falls on the PV cells in a solar panel, the sunlight is converted into electricity. The generated power is DC current. An AC combiner box is used to convert that DC power into usable AC power.
+                                                                
+                                                                The generated AC electricity is fed into a bidirectional meter that supplies power to the house. It also exports excess power to the DISCOM (grid) and imports power from the grid if electricity generated by the rooftop solar system is not enough to cover the daily requirement.                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                                                How to apply for a solar rooftop subsidy?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                                Under the DBT scheme, the subsidy application process has become much easier. Here's a step-by-step breakdown:
+                                                                
+                                                                Visit the National Portal for Rooftop Solar website.
+                                                                Download the Sandes app from the website and install it.
+                                                                Register as a customer on the Sandes app.
+                                                                Once registered, a discom official will visit your home to assess technical feasibility.
+                                                                After receiving the No Objection Certificate (NOC) from the official, choose SolarSquare as your solar installation company.
+                                                                Discuss the project details with us and sign an agreement.
+                                                                Upon receiving payment, we will commence the installation process.
+                                                                We will then provide a work completion report and apply for a net meter installation on your behalf.
+                                                                You will receive a commissioning certificate upon completion.
+                                                                Submit your bank account information and upload a copy of a cancelled cheque through the National Portal for Rooftop Solar.
+                                                                Once the fund handling agency receives your details, the subsidy will be credited to your bank account within 30 days.
+                                                                By following these steps, you can smoothly complete the process and enjoy the benefits of solar energy.                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                                                What is the solar panel for home price in India without a subsidy?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                                If you are planning to install solar for home or housing societies, the solar panel for home price list we’ve curated will greatly help you. Here's the reference about the range of solar panels for home cost without a subsidy in India: 
+                                                                <ul style="list-style-type: disc;padding-left: 30px;">
+                                                                    <li>1 kW rooftop solar system: ₹70,000 to ₹1,10,000</li>
+                                                                    <li> 3 kW rooftop solar system: ₹1,80,000 to ₹2,40,000</li>
+                                                                    <li>5 kW rooftop solar system: ₹3,00,000 to ₹4,00,000</li>
+                                                                    <li>2 kW rooftop solar system: ₹1,40,000 to ₹1,80,000</li>
+                                                                    <li>4 kW rooftop solar system: ₹2,40,000 to ₹3,20,000</li>
+                                                                    <li>10 kW rooftop solar system: ₹6,00,000 to ₹8,00,000</li>
+                                                                </ul>                                                          
+                                                            </div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                                                Why should I go solar?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                                
+If you want to save money from the sun, Solar is the best investment for you. Solar allows you to save on your monthly electric bills plus it also allows you to save the planet by going green. Solar energy is a true form of renewable clean energy which leads to zero pollution (air, noise, land) and emits no greenhouse gases mitigating climate change.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                                                                Is Solar power safe?
+
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                                The electricity produced by a solar power system is identical to the electricity provided by your local utility company— the only difference is the source. Solar power harnesses the sun's energy to generate electricity, and this process is not only clean but also safe. Unlike traditional power generation methods, solar energy does not release any harmful toxins, pollutants, or greenhouse gases. This makes it one of the safest sources of electricity, with no risk of hazardous by-products, ensuring a healthier and more sustainable future.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                                                                What do I need to install a rooftop solar system?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                                
+                                                                All you need to qualify for a solar system is - empty space on your roof and access to your rooftop. Just fill the project enquiry form on our website and our team will contact you to discuss your requirement. Once the project is finalised, we will take care of your entire plant design, installation and maintenance.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+                                                                What are the different types of Solar systems?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                                
+<p>There are 3 types of Solar systems depending on whether the plant is linked to the power grid or battery systems for storage.</p>
+<p>
+<b>On-grid solar systems</b> use common solar inverters and are connected to the public electricity grid. Any excess solar power that you generate is exported to the electricity grid and one usually get paid a feed-in-tariff or credits for the energy you export. The policy for getting credits for energy exported to the credit is termed as “Net-Metering Policy” and is available currently in most states of India.</p>
+<p>
+<b>Off-grid solar systems</b> are not connected to the electricity grid and therefore requires battery storage. An off-grid solar system must be designed appropriately so that it will generate enough power throughout the year and have enough battery capacity to meet the home’s requirements, even in the depths of winter when there is less sunlight.</p>
+<p>
+<b>Hybrid solar systems</b> combines solar and battery storage in one and are now available in many different forms and configurations. This means being able to store solar energy that is generated during the day and using it at night. When the stored energy is depleted, the grid is there as backup, allowing consumers to have the best of both worlds.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
+                                                                Do solar panels generate electricity even during monsoon and winter?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                               
+Yes, Solar panels do produce electricity in cloudy or rainy weather albeit with reduced efficiency. This fall in production is considered in the unit generation estimates provided for every project.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10" aria-expanded="false" aria-controls="faq10">
+                                                                Does a rooftop solar PV generate power during a power failure?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                                
+No, rooftop solar PV does not function or generate electricity during a blackout due to safety reasons. Since blackouts occur when the electricity grid is damaged. If a solar inverter was still feeding electricity into a damaged grid it would risk the safety of the people repairing the fault in the network. SolarSquare Energy provides the option of using a Li-ion storage battery with Solar power plants for areas which suffer from frequent power failures. This battery unit can store the excess electricity produced during the day and acts as a backup for any electricity requirement during night or in the event of a power failure.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11" aria-expanded="false" aria-controls="faq11">
+                                                                How much electricity does a solar plant produce?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                               
+The production level of a solar plant depends on multiple factors like radiation levels, amount of sunlight received, plant design and quality of components. On an average, 1 kW solar plant produces 4 units of electricity per day.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq12" aria-expanded="false" aria-controls="faq12">
+                                                                What kind of appliances can I use on Solar Power?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq12" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                                
+                                                                Solar Power plants are used to power all types of heavy machinery in industrial plants as well as household electrical and electronic appliances. Since the electricity produced from the plant is fed in sync with your grid/diesel generator, there are no voltage fluctuations irrespective of the number of appliances you use.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq13" aria-expanded="false" aria-controls="faq13">
+                                                                How do I decide what size of plant I need?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq13" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                               
+                                                               <P> The size of your Solar plant depends on the following factors</P>
+                                                                <ul style="list-style-type: disc;padding-left: 20px;">
+                                                                    <li>Your electricity consumption pattern</li>
+                                                                    <li>Available shadow free area</li>
+                                                                    <li>Solar irradiation in your area</li>
+                                                                </ul>
+                                                                <P> Once you enlist your interest in a solar project, SolarSquare conducts a scientific mapping of the appropriate project size for you.</P>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq14" aria-expanded="false" aria-controls="faq14">
+                                                                What is Net metering?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq14" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                            <div class="accordion-body">
+                                                               
+Net Metering is a system that gives solar energy owners credits for the power that they add to the grid. When solar panels produce excess power, that power is sent to the grid. And this power can be ‘taken back’ when the solar plants are not functioning – example, during the night. When a unit of solar energy that has been ‘net metered’, the bi-directional electricity meter will run backwards. Customers are billed only for the ‘net’ energy use.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay=".5s">
-                                        <h5 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                                                What is included in your services?
-                                            </button>
-                                        </h5>
-                                        <div id="faq2" class="accordion-collapse show" data-bs-parent="#accordion">
-                                            <div class="accordion-body">
-                                                There are many variations of passages Lorem Ipsum but the majority have suffered alteration in some form, by injected humor.
+                                        <div class="tab-pane contact-content" id="maintanance" role="tabpanel" aria-labelledby="maintanancet">
+                                            <div class="faq-accordion mt-4 mt-md-0">
+                                                <div class="accordion" id="accordion1">
+                                                    <div class="accordion-item mb-3" data-wow-delay=".3s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq15" aria-expanded="true" aria-controls="faq15">
+                                                                What is the life of a rooftop solar system?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq15" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                                                            <div class="accordion-body">
+                                                                
+The Solar Plant life is 25 years. The main components are solar panels and inverters. Solar panels have a warranty of 25 years and inverter warranty ranges from 5-12 years.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq16" aria-expanded="false" aria-controls="faq16">
+                                                                Do Solar Rooftop projects have a high maintenance cost?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq16" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                                                            <div class="accordion-body">
+                                                                A Solar Rooftop module comprises minimal moving parts and hence has very low maintenance cost. SolarSquare Energy provides first 5-year maintenance free of cost to clients ensuring a hassle free experience for all our customers.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq17" aria-expanded="false" aria-controls="faq17">
+                                                                Can Solar projects damage my roof?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq17" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                                                            <div class="accordion-body">
+                                                                SolarSquare Energy has a UL certification (one of the highest quality and safety standards in the world) and ensures that no damage to the existing structures takes place during the installation or running of the solar plant.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq18" aria-expanded="false" aria-controls="faq18">
+                                                                Do I need to clean my Solar plant?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq18" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                                                            <div class="accordion-body">
+                                                                
+It is a good practice to clean the solar panels 1-2 times a month. It is safer to clean the panels early in the morning or at night when no incident sun rays are present and the power plant is not producing any electricity. You can simply use a clean wet cloth, soft nylon brush or sponge to wipe the surface but ensure the panels are clear of any moisture. Don’t use metal brushes or detergents as these may streak the glass of the panel.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq19" aria-expanded="false" aria-controls="faq19">
+                                                                My roof is not made of concrete; can I still install a Solar Project?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq19" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                                                            <div class="accordion-body">
+                                                               
+Solar power plants can be installed on almost any type of roofs irrespective of their shape or material type. In cases where the construction material is brittle (Asbestos) or the roof integrity is compromised, SolarSquare Energy provides roof replacement solutions as part of the solar rooftop project.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="accordion-item mb-3 wow fadeInUp" data-wow-delay=".7s">
-                                        <h5 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                                                What type of company is measured?
-                                            </button>
-                                        </h5>
-                                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                                            <div class="accordion-body">
-                                                There are many variations of passages Lorem Ipsum but the majority have suffered alteration in some form, by injected humor.
+                                        <div class="tab-pane contact-content" id="expenditure" role="tabpanel" aria-labelledby="expendituret">
+                                            <div class="faq-accordion mt-4 mt-md-0">
+                                                <div class="accordion" id="accordion2">
+                                                    <div class="accordion-item mb-3" data-wow-delay=".3s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq20" aria-expanded="true" aria-controls="faq20">
+                                                                How much does a solar Plant cost?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq20" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                                                            <div class="accordion-body">
+                                                                The cost of a solar plant depends on its size, configuration and degree of supporting structures required. We provide you multiple options to choose from, designed specifically to meet your requirements.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq21" aria-expanded="false" aria-controls="faq21">
+                                                                What is the break-even period for Solar rooftop projects?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq21" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                                                            <div class="accordion-body">
+                                                                Rooftop solar projects are among the most lucrative investments for industrial, commercial and residential projects. The breakeven is achieved in 2-4 years itself, while you enjoy savings for the project life of 25 years.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq22" aria-expanded="false" aria-controls="faq22">
+                                                                Are there any subsidies provided by the government for solar projects?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq22" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                                                            <div class="accordion-body">
+                                                                
+There are no subsidies available for commercial entities. For residential rooftop solar projects, subsidies are released by state governments intermittently. Whenever subsidy is applicable, SolarSquare Energy provides it upfront to the customer in the project cost itself. At present, the Madhya Pradesh government has released a lucrative solar subsidy for the residential sector. The various slabs of subsidy are -
+                                                                <table class="table table-striped table-responsive">
+                                                                    <tr>
+                                                                        <th>Segment</th>
+                                                                        <th>Solar Project size</th>
+                                                                        <th>Subsidy</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Individual house</td>
+                                                                        <td>1-2 kW</td>
+                                                                        <td>₹30,000/- to ₹60,000/-</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Individual house</td>
+                                                                        <td>2-3 kW</td>
+                                                                        <td>₹60,000/- to ₹ 78,000/-</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Individual house</td>
+                                                                        <td>above 3kW kW</td>
+                                                                        <td>₹78,000/-</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Group Housing Societies/Residential Welfare Associations</td>
+                                                                        <td></td>
+                                                                        <td>Rs 18,000/kw</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3" data-wow-delay=".7s">
+                                                        <h5 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq23" aria-expanded="false" aria-controls="faq23">
+                                                                What is the difference between CapEx and OpEx models?
+                                                            </button>
+                                                        </h5>
+                                                        <div id="faq23" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                                                            <div class="accordion-body">
+                                                                
+In a Capex model, the entire investment comes from the power consumer. The consumer hires a solar EPC company who provides turnkey installation of the entire solar power system and hands over assets to consumers. EPC also does annual operation and maintenance (O&M) of plant. In the OPEX model, an investor or project developer (sometimes called Renewable Energy Service Company –RESCO) invests the CAPEX and the consumer pays for the energy consumed. Both consumer and developer sign a long-term power purchase agreement (PPA) for an agreed tenure & tariff.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq24" aria-expanded="false" aria-controls="faq24">
+                                                            Are financing options available for Solar Rooftop projects?
+                                                        </button>
+                                                    </h5>
+                                                    <div id="faq24" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                                                        <div class="accordion-body">
+                                                            SolarSquare Energy provides lucrative EMI options while also facilitating collateral free loan facilities provided by various banking institutions for solar projects.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
                                             </div>
-                                        </div>
+                                         </div>
                                     </div>
-                                </div>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
+                
             </div>
         </section>
+        <script>
+            function openCity(evt, cityName) {
+              var i, x, tablinks;
+              x = document.getElementsByClassName("tab-pane");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("nav-link");
+              for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            </script>
 
         <!--<< Footer Section Start >>-->
         <footer class="footer-section footer-bg">
