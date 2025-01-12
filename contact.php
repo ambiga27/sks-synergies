@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
 
      // The location of the PDF file
     // on the server
-    $filename = "sample.pdf";
+    $filename = "SKS Synergies.pdf";
     
     // Header content type
     header("Content-type: application/pdf");
